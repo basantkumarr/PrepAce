@@ -1,0 +1,419 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  background: #ffffff;
+  font-style: normal;
+}
+
+
+:root {
+    --color: #31baa0;
+  }
+
+
+.sticky-top {
+  position: fixed;
+  bottom: 0;
+ 
+  z-index: 1000; /* Adjust z-index as needed */
+}
+
+size{
+  display: flex;
+  }
+
+@media screen and (max-width: 500px) {
+  .all{
+    padding-left: 12px;
+   padding-right: 12px;
+  
+    padding-top: 1rem;
+   padding-bottom: 1rem;
+    }
+
+ 
+  .null{
+    padding-left: 6px;
+   padding-right: 0px;
+   
+    }
+    .allcrs{
+        display: none;
+    }
+
+ 
+
+ 
+ 
+ .size{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+ 
+ 
+.lowernav{
+  display: none;
+   
+}
+   
+}
+
+/* Media query for screens between 600px and 900px */
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+
+
+ 
+  .null{
+    padding-left: 28px;
+   padding-right: 28px;
+  
+    padding-top: 1rem;
+   padding-bottom: 1rem;
+  }
+  .all{
+    padding-left: 28px;
+   padding-right: 28px;
+  
+    padding-top: 1rem;
+   padding-bottom: 1rem;}
+
+
+   .hamburger,.lowernav{
+    display: none;
+  
+  }
+     
+    
+ 
+}
+
+/* Media query for screens larger than 900px */
+@media screen and (min-width: 900px) {
+ 
+  .null{
+    padding-left: 40px;
+   padding-right: 40px;
+    
+    }
+.all{
+ padding-left: 40px;
+padding-right: 40px;
+ 
+
+ }
+ .hamburger{
+    display: none;
+  
+  }
+}
+
+
+
+
+
+.w3-sidebar {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(165, 164, 164, 0.3); /* Add shadow here */
+
+  }
+  
+  .w3-show {
+    transform: translateX(0);
+   }
+  
+  .w3-hide {
+    transform: translateX(-100%);
+  }
+  
+  .w3-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+  
+  .backdrop-blur-sm {
+    backdrop-filter: blur(5px);
+  }
+  
+.w3-item{
+
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  margin: 10px 0px;
+  color: #3b3a3a;
+  transition: 0.3s;
+}
+.w3-container {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.w3-button {
+   display: flex;
+   align-items: center;
+ 
+  font-size: 19px;
+  margin-left: 25px;
+  
+}
+
+.w3-bar-item {
+  display: block;
+  padding: 8px 35px;
+  text-decoration: none;
+  margin: 18px 0px;
+  color: #424242;
+  transition: 0.3s;
+  margin-left: 30px;
+  border: 1px solid rgb(196, 191, 191);
+  border-radius: 6px;
+}
+
+.w3-bar-item:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.w3-item:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+
+
+
+
+
+.cookiesContent {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px 30px 70px;
+  button.close {
+    width: 30px;
+    font-size: 20px;
+    color: #c0c5cb;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 82px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  button.accept {
+    background-color: #ed6755;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    padding: 14px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0px 6px 18px -5px rgba(237, 103, 85, 1);
+  }
+}
+
+
+
+
+
+
+
+.filter{
+  height: 450px;
+border-right:1px solid rgb(156, 153, 153) 
+}
+
+
+.pd{
+  height: 700px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; 
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+  .slider {
+    height: 200px;
+    writing-mode: bt-lr;
+    appearance: slider-vertical;
+    transform: rotate(0deg);
+  }
+}
+
+@media (min-width: 501px) {
+  .slider {
+    height: auto;
+    writing-mode: lr-bt;
+    appearance: slider-horizontal;
+    transform: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General form styling */
+.banner-newsletter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 28px 0px;
+  }
+  
+  .inputbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  
+  .inputbox span {
+    width: max-content;
+    padding: 15px 15px;
+    
+    border: 5px solid #31baa0;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+    color:black;
+   }
+  
+  .mobNumber2 {
+    padding: 15px;
+    border: 1px solid #31baa0;
+    border-left: none;
+    border-radius: 0 0px 0px 0;
+    font-size: 14px;
+  }
+  
+  .submitbtn-dwnapp {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .ripple {
+    padding: 11px 27px;
+    background-color: #31baa0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    border: 1px solid #31baa0;
+
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+
+    transition: background-color 0.3s;
+  }
+  
+  .ripple:hover {
+    background-color: #31baa0;
+  }
+  
+  .loader {
+    display: none; /* Hide loader by default */
+    margin-left: 10px;
+  }
+  
+  .loading {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #93c14c;
+    border-radius: 50%;
+    border-top: 3px solid #3498db;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+
+
+  /* Custom scrollbar styling */
+.no-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #31baa0; /* Primary color */
+  border-radius: 4px;
+}
+
+.no-scrollbar::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Darker background for the scrollbar track */
+}
+
+/* Tailwind CSS classes */
+.bg-gray-800 {
+  background-color: #2d2d2d;
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}
+
+.text-gray-200 {
+  color: #e5e7eb;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.text-success {
+  color: #31baa0; /* Primary color */
+}
